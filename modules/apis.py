@@ -12,9 +12,4 @@ def enrich_country_codes(url):
     #rename api to match
     rename_api = data_api.rename(columns={"uuid": "job"})
 
-    #merge both data
-
-    #merge_api = pd.merge(rename_database, rename_api, how='inner', on='job')
-    #data_plus_api = merge_api[["uuid", "country_code", "suggestion", "gender"]]
-
     return rename_api

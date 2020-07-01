@@ -1,6 +1,8 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
+#sqlitedb_path = '/Users/luisdemiguel/Desktop/Ironhack/ih_datamadpt0420_project_m1/data/raw/raw_data_project_m1.db'
+
 def acquire(sqlitedb_path):
     #Bringing the database
     engine = create_engine(f'sqlite:///{sqlitedb_path}')
